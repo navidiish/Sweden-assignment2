@@ -1,0 +1,2 @@
+Reflect on Separation of Concerns in your project and prepare assets folder with style folder where you will add necessary scss files, files which represents concerns should start with _nameOfYourConcern.scss join separated files in index.scss
+
