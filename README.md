@@ -1,3 +1,3 @@
 # Sweden-assignment2
 This is a repo for our course in CSS Advanced at NTNU Gjøvik.
-halla
+The text we have chosen is an excerpt from the sea shanty Wellerman.
