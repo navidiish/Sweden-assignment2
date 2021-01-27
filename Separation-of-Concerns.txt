@@ -1,6 +1,0 @@
-Reflect on Separation of Concerns in your project and prepare assets folder with style folder where you will add necessary scss files, files which represents concerns should start with _nameOfYourConcern.scss join separated files in index.scss
-
--The text we have chosen is an excerpt from the sea shanty Wellerman.
--We will use BEM to structure and organize our project.
--For best practices we will be aware of following methods DRY, kISS & YAGNI when writing codes
--By seperating HTML, CSS and JS in our framework, we would get a more tidy layout
