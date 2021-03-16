@@ -10,7 +10,7 @@
       grid-gap: 30px;    
   }
   
-  .item--1, .item--2, .item--3, .item--4, .item--4, .item--5, .item--6{
+  container__item {
   font-family: 'Pirata One';
   color: #000000;
   font-size: 1.1em;
