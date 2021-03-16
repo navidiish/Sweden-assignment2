@@ -10,7 +10,7 @@
       grid-gap: 30px;    
   }
   
-  container__item {
+  .container__item {
   font-family: 'Pirata One';
   color: #000000;
   font-size: 1.1em;
