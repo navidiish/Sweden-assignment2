@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Pirata One';
+  src: url(../assets/fonts/Pirata_One/PirataOne-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  width: 90%;
+}
+
+.scene {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 1200px;
+  margin: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 30px;
+}
+
+.scene1__section, .scene2__section, .scene3__section, .scene4__section, .scene5__section {
+  font-family: "Pirata One", sans-serif;
+  color: #000000;
+  font-size: 1.1em;
+}
+
+h2 {
+  position: relative;
+  font-family: "Pirata One", sans-serif;
+}
+
+.scene2__section .scene2__wrapper {
+  position: relative;
+}
+
+.scene2__section .scene2__lyrics {
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  -webkit-animation: scene2-animation 10s ease-in-out;
+          animation: scene2-animation 10s ease-in-out;
+}
+
+@-webkit-keyframes scene2-animation {
+  0% {
+    font-size: 400%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+
+@keyframes scene2-animation {
+  0% {
+    font-size: 400%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
