@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pirata One';
+    src: url(../assets/fonts/Pirata_One/PirataOne-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+//storing the font in a variable:
+$primary-font: 'Pirata One', sans-serif; 
