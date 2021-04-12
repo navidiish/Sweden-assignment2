@@ -5,19 +5,45 @@
 
 body {
     background-color: $white;
-    width: 90%;
+    
+}
+
+header {
+    background-image: url("/assets/images/titlecard.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.header__wave {
+    position: absolute;
+    bottom: 0;
+    height: 35%;
+    animation: header-wave ease-in-out 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header-wave {
+    0% {
+        left: -20%;
+    }
+    50% {
+        left: 0;
+    }
+    100% {
+        left: -20%;
+    }
 }
 
 .scene{
     background-color: $lightGrey;
     width: 100%;
-    height: 1200px;
-    margin: 5%;
-
-    display: grid;
-    grid-template-rows: 1fr;
+    height: 100%;
     
-    grid-gap: 30px;    
+    display: flex;
+    flex-direction: column;  
 }
 
 .scene1__section, .scene2__section, .scene3__section, .scene4__section, .scene5__section  {
@@ -27,29 +53,235 @@ body {
     }
     
 h2 {
-    position:relative;
     font-family: $primary-font;
     }
 
-.scene2__section {
-    
-    .scene2__wrapper {
+    .scene1__section {
+        
+        .scene1__wrapper{
+        background-image: url("/assets/images/scene1.jpg");
         position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        }
+
+
+        .scene1__waveSvg {
+            position: absolute;
+            width: 25%;
+            z-index: 1;
+            left: 10%;
+            top: 48%;
+            animation: wave__scene1__animation 20s ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes wave__scene1__animation {
+            0% {
+            transform: translateX(100%);
+            }
+            100% {
+            transform: translateX(0);
+            }
+        }
+
+        .scene1__lyrics {
+            position: absolute;
+            font-size: 150%;
+            top: 90%;
+            animation-direction: alternate-reverse 3s infinite;
+            animation: scene1 25s linear;
+            max-width: 100%;
+            opacity: 0;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes scene1 {
+            0% {
+                transform: translateX(110%);
+                opacity: 100%;
+            }
+            100% {
+            transform: translateX(-100%);
+            opacity: 100%;
+            }
+        }
+
+        .scene1__img {
+            width: 100%;
+        }
+
+        
+    }
+
+.scene2__section {
+
+    .scene2__wrapper {
+        background-image: url(/assets/images/scene2.jpg);
+        position: relative;
+        height: 100vh;
+        width: 100%;
     }
 
     .scene2__lyrics {
         position: absolute;
-        left: 40%;
-        top: 35%;
-        animation: scene2-animation 10s ease-in-out;
+        left: -45%;
+        top: 60%;
+        animation: scene2-animation 30s linear;
+        animation-iteration-count: infinite;
+        transform: rotate(-10deg);
     }
+    
     @keyframes scene2-animation {
         0% {
-            font-size: 400%;
-        }
-        100% {
-            font-size: 100%;
+            font-size: 150%;
         }
 
+        50% {
+            font-size: 150%;
+            left: 25%;
+            top: 47.5%;
+            opacity: 100%;
+        }
+
+        75% {
+            font-size: 100%;
+            opacity: 75%;
+            left: 50%;
+            top: 35%;
+        }
+
+        100% {
+            opacity: 0;
+            left: 50%;
+            top: 35%;
+            font-size: 0;
+        }
+        
+    }
+
+}
+
+.scene3__section{
+    width: 100%;
+    height: 100vh;
+
+    .scene3__wrapper{
+        background-image: url("/assets/images/scene3.jpg");
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .scene3__lyrics{
+        position: absolute;
+        left: 17%;
+        top: 65%;
+        animation: scene3-animation linear 20s;
+        transform: rotate(-90deg);
+        font-size: 150%;
+        text-align: center;
+        opacity: 0%;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes scene3-animation{
+        0%{
+            opacity: 0%;
+            
+        }
+
+        25% {
+            opacity: 25%;
+            transform: rotate(-45deg);
+            left: 17%;
+            top: 27.5%;
+        }
+
+        50% {
+            opacity: 100%;
+            transform: rotate(0deg);
+            left: 42%;
+            top: 10%;
+        }
+
+        75% {
+            opacity: 25%;
+            transform: rotate(45deg);
+            left: 67%;
+            top: 27.5%;
+        }
+
+        100%{
+            opacity: 0%;
+            transform: rotate(90deg);
+            left: 67%;
+            top: 65%;
+            
+        }
+    }
+}
+
+.scene4__section{
+
+    .scene4__wrapper{
+        background-image: url("/assets/images/scene4.jpg");
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .scene4__lyrics{
+        position: absolute;
+        left: 60%;
+        top: 30%;
+        opacity: 0;
+        animation: scene4-animation1 ease-in-out 15s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes scene4-animation1 {
+        0%{
+            opacity: 100%;
+        }
+
+        50% {
+            opacity: 100%;
+            font-size: 150%;
+        }
+
+        100%{
+            opacity: 0%;
+        }
+    }
+}
+
+.scene5__section{
+    .scene5__wrapper{
+        background-image: url("/assets/images/scene5.jpg");
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .scene5__lyrics{
+        position: absolute;
+        left: 55%;
+        top: 30%;
+        transform: rotate(-30deg);
+        animation: scene5-animation ease-in-out 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes scene5-animation {
+        0%{
+            opacity: 100%;
+            
+        }
+        100%{
+            opacity: 0%;
+            
+            font-size: 250%;
+        }
     }
 }
