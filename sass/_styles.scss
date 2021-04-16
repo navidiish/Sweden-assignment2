@@ -285,3 +285,18 @@ h2 {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        background-size: cover;
+        background-position: center;
+        order: 1;
+    }
+    .scene1__wrapper {
+        background-size: cover;
+        transform: translateX(0%);
+    }
+    .scene2__wrapper {
+        background-position: center;
+    }
+  }
