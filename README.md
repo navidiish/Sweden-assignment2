@@ -7,3 +7,4 @@ Our Reflection on seperation of concerns:
 -For best practices we will be aware of following methods DRY, kISS & YAGNI when writing codes
 -By using SASS, we get a more simple code.
 -We will use Illustrator for the making of svgs.
+By using SASS, we get more defined colors and animations. 
