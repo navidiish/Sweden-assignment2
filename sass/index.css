@@ -409,4 +409,22 @@ h2 {
     font-size: 250%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    background-size: cover;
+    background-position: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .scene1__wrapper {
+    background-size: cover;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .scene2__wrapper {
+    background-position: center;
+  }
+}
 /*# sourceMappingURL=index.css.map */
