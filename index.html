@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -17,6 +8,8 @@
         <link rel="stylesheet" href="/sass/index.css">
     </head>
     <body>
+    <!-- Div used as container to insert the header and all the scenes -->
+    <div class="container">
     <!-- Insert the description here? -->
     <header class="header">
         <svg class="header__wave" data-name="Layer 1" viewBox="0 0 3840 350.22" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +18,7 @@
             </defs>
             <path class="cls-5" transform="translate(0)" d="M3684.6,1.66c-47.93-2.42-105.21-13.81-296.45,83.58-248.7,141.08-609.59,167.94-467.5-63.66C2850-1.84,2688,62.21,2595.36,107.22c-368.26,121.89-415,64.89-377-99.58-100.39,21.66-181,52-242.94,90.55h0c-163.74,66.42-274.61,92.44-210.78-96.53-47.93-2.42-105.21-13.81-296.45,83.58-248.7,141.08-609.59,167.94-467.5-63.66C930-1.84,768,62.21,675.36,107.22c-368.26,121.89-415,64.89-377-99.58C164.73,36.47,66.17,80.64,0,139.09V350.22H3840V165.37C3676.25,231.79,3620.77,190.63,3684.6,1.66Z"/>
             </svg>
-            <audio
+            <audio class="header__audio"
             controls
             src="/assets/music/wellerman.mp3">
             </audio>
@@ -36,8 +29,7 @@
         <section class="scene1__section">
         
         <div class="scene1__wrapper">
-        <p class="scene1__lyrics">There once was a ship that put to sea.
-        The name of the ship was the Billy of Tea.
+        <p class="scene1__lyrics">There once was a ship that put to sea. The name of the ship was the Billy of Tea.
         The winds blew up, her bow dipped down.
         O blow, my bully boys, blow.</p>
             
@@ -47,20 +39,16 @@
     </div>
     </section>
     
+<!-- Scene2 start -->
         <section class="scene2__section">
-            
             <div class="scene2__wrapper">
-            <p class="scene2__lyrics">
-            She had not been two weeks from shore<br/>
-            When down on her a right whale bore<br/>
-            The captain called all hands and swore<br/>
-            He'd take that whale in tow
-            </p>
-            
-            <!-- <img src="/assets/images/scene2.jpg" alt="">-->
-
-
-        </div>
+                <p class="scene2__lyrics">
+                She had not been two weeks from shore<br/>
+                When down on her a right whale bore<br/>
+                The captain called all hands and swore<br/>
+                He'd take that whale in tow
+                </p>
+            </div>
         </section>
     
         <section class="scene3__section">
@@ -81,7 +69,7 @@
             <p class="scene4__lyrics">
             As far as I've heard, the fight's still on<br/>
             The line's not cut and the whale's not gone<br/>
-            The wellerman makes his regular call<br/>
+            The Wellerman makes his regular call<br/>
             To encourage the captain, crew and all<br/>
             </p>
             </div>
@@ -99,16 +87,7 @@
             </div>
             
         </section>
-        
-
-
-        <!-- Insert a description of: for ex. "Made by: Ole, Navid, Richard & Hanna" -->
-        <footer class="footer">
-
-        </footer>
-        
     </main>
-    </body>
-    </html>
+    </div>
 </body>
 </html>
