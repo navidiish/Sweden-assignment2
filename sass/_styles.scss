@@ -5,16 +5,22 @@
 
 body {
     background-color: $white;
-    
 }
 
-header {
+//Container to store header and the different scenes
+.container {
+    display: flex;
+    flex-direction: column;  
+}
+
+.header {
     background-image: url("/assets/images/titlecard.jpg");
     width: 100%;
     height: 100vh;
-    background-size: cover;
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header__wave {
@@ -37,13 +43,9 @@ header {
     }
 }
 
-.scene{
-    background-color: $lightGrey;
+.scene {
     width: 100%;
     height: 100%;
-    
-    display: flex;
-    flex-direction: column;  
 }
 
 .scene1__section, .scene2__section, .scene3__section, .scene4__section, .scene5__section  {
@@ -52,73 +54,72 @@ header {
     font-size: 1.1em;
     }
     
-h2 {
-    font-family: $primary-font;
-    }
-
-    .scene1__section {
+//Scene1 start
+.scene1__section {
         
-        .scene1__wrapper{
+    .scene1__wrapper{
         background-image: url("/assets/images/scene1.jpg");
+        background-size: cover;
         position: relative;
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        }
-
-
-        .scene1__waveSvg {
-            position: absolute;
-            width: 25%;
-            z-index: 1;
-            left: 10%;
-            top: 48%;
-            animation: wave__scene1__animation 20s ease-in-out;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes wave__scene1__animation {
-            0% {
-            transform: translateX(100%);
-            }
-            100% {
-            transform: translateX(0);
-            }
-        }
-
-        .scene1__lyrics {
-            position: absolute;
-            font-size: 150%;
-            top: 90%;
-            animation-direction: alternate-reverse 3s infinite;
-            animation: scene1 25s linear;
-            max-width: 100%;
-            opacity: 0;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes scene1 {
-            0% {
-                transform: translateX(110%);
-                opacity: 100%;
-            }
-            100% {
-            transform: translateX(-100%);
-            opacity: 100%;
-            }
-        }
-
-        .scene1__img {
-            width: 100%;
-        }
-
-        
     }
 
-.scene2__section {
 
+    .scene1__waveSvg {
+        position: absolute;
+        width: 25%;
+        z-index: 1;
+        left: 10%;
+        top: 48%;
+        animation: wave__scene1__animation 20s ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes wave__scene1__animation {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .scene1__lyrics {
+        position: absolute;
+        font-size: 150%;
+        top: 90%;
+        animation-direction: alternate-reverse 3s infinite;
+        animation: scene1 25s linear;
+        max-width: 100%;
+        opacity: 0;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes scene1 {
+        0% {
+            transform: translateX(110%);
+            opacity: 100%;
+        }
+        100% {
+            transform: translateX(-100%);
+            opacity: 100%;
+        }
+    }
+
+    .scene1__img {
+        width: 100%;
+    }
+}
+
+//Scene2 start
+.scene2__section {
     .scene2__wrapper {
-        background-image: url(/assets/images/scene2.jpg);
+        background-image: url("/assets/images/scene2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
         position: relative;
         height: 100vh;
         width: 100%;
@@ -164,15 +165,16 @@ h2 {
 }
 
 .scene3__section{
-    width: 100%;
-    height: 100vh;
-
     .scene3__wrapper{
         background-image: url("/assets/images/scene3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
         position: relative;
         width: 100%;
         height: 100vh;
     }
+    
     .scene3__lyrics{
         position: absolute;
         left: 17%;
@@ -227,6 +229,9 @@ h2 {
     .scene4__wrapper{
         background-image: url("/assets/images/scene4.jpg");
         position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
         height: 100vh;
         width: 100%;
     }
@@ -260,6 +265,9 @@ h2 {
     .scene5__wrapper{
         background-image: url("/assets/images/scene5.jpg");
         position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
         height: 100vh;
         width: 100%;
     }
@@ -286,17 +294,24 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    header {
-        background-size: cover;
-        background-position: center;
-        order: 1;
+
+//Media Q
+@mixin small-screen {
+    @media screen and (max-width: 1080px) {
+    @content;
     }
-    .scene1__wrapper {
-        background-size: cover;
-        transform: translateX(0%);
+}
+
+@mixin tablet {
+    @media screen and (max-width: 900px) {
+    @content;
     }
-    .scene2__wrapper {
-        background-position: center;
+}
+
+@mixin phone {
+    @media screen and (max-width: 600px) {
+    @content;
     }
-  }
+}
+
+ 

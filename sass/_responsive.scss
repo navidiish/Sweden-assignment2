@@ -1,0 +1,444 @@
+//Design for big screens
+@include small-screen {
+    .header {
+    background-size: 100%;
+    width: 100%;
+    height: 70vh;
+    #{&}__wave {
+        width: 250%;
+        height: auto;
+        animation: header-wave ease-in-out 10s;
+        animation-iteration-count: infinite;
+        }
+    @keyframes header-wave {
+        0% {
+            left: -5%;
+        }
+        50% {
+            left: 0;
+        }
+        100% {
+            left: -5%;
+        }
+    }
+    }
+
+    .scene1__section {
+        .scene1__lyrics {
+            font-size: 115%;
+            
+        }
+    }
+    
+    .scene2__section {
+
+        .scene2__wrapper {
+            background-position-x: 20%;
+        }
+        
+        @keyframes scene2-animation {
+    
+            75% {
+                left: 55%;
+            }
+    
+            100% {
+                left: 55%;
+            }
+            
+        }
+    }
+
+
+    .scene3__section{
+        .scene3__wrapper{
+            background-position-x: 20%;
+        }
+        
+        .scene3__lyrics{
+            font-size: 125%;
+        }
+    }
+
+
+    .scene4__section{
+        .scene4__wrapper{
+            background-position-x: 20%;
+        }
+        .scene4__lyrics{
+            top: 25%;
+        }
+    }
+
+    .scene5__section{
+        .scene5__wrapper{
+            background-position-x: 30%;
+        }
+    
+        .scene5__lyrics{
+            top: 25%;
+        }
+    
+        @keyframes scene5-animation {
+            100%{
+                font-size: 200%;
+            }
+        }
+    }
+}
+
+
+
+//Design for tablet
+@include tablet {
+    .header {
+    background-size: 100%;
+    height: 60vh;//example of smth that could be a var
+
+    #{&}__wave {
+        width: 250%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+     }
+    }
+
+     //scene1-section1
+        .scene1__section {
+            .scene1__lyrics {
+                font-size: 95%;
+                top: 80%;
+            }
+
+            .scene1__waveSvg {
+                top: 55%;
+            }
+
+            @keyframes scene1 {
+                0% {
+                    transform: translateX(110%);
+                    opacity: 100%;
+                }
+                100% {
+                transform: translateX(-110%);
+                opacity: 100%;
+                }
+            }
+        }
+    
+    //Scene2 start
+    .scene2__section {
+        .scene2__wrapper {
+            background-size: 100%;
+            height: 55vh;
+        }
+
+        .scene2__lyrics {
+            position: absolute;
+            left: -45%;
+            top: 60%;
+            animation: scene2-animation 30s linear;
+            animation-iteration-count: infinite;
+            transform: rotate(-10deg);
+        }
+        
+        @keyframes scene2-animation {
+            0% {
+                font-size: 100%;
+            }
+    
+            50% {
+                font-size: 100%;
+                left: 25%;
+                top: 37.5%;
+                opacity: 100%;
+            }
+    
+            75% {
+                font-size: 60%;
+                opacity: 75%;
+                left: 45%;
+                top: 35%;
+            }
+    
+            100% {
+                opacity: 0;
+                left: 45%;
+                top: 35%;
+                font-size: 0;
+            }
+        }
+    }
+
+    .scene3__section{
+        .scene3__wrapper{
+            background-position-x: 37.5%;
+        }
+        
+        .scene3__lyrics{
+            left: 8%;
+            font-size: 125%;
+        }
+    
+        @keyframes scene3-animation{
+            0%{
+                opacity: 0%;
+                
+            }
+    
+            25% {
+                left: 8%;
+            }
+    
+            100%{
+                font-size: 110%;
+                
+            }
+        }
+    }
+
+
+    .scene4__section{
+
+        .scene4__wrapper{
+            background-position-x: 30%;
+        }
+        
+        .scene4__lyrics{
+            left: 65%;
+        }
+    
+        @keyframes scene4-animation1 {
+            50% {
+                opacity: 100%;
+                font-size: 120%;
+            }
+        }
+    }
+
+
+    .scene5__section{
+        .scene5__wrapper{
+            background-position-x: 37.5%;
+        }
+    
+        .scene5__lyrics{
+            top: 25%;
+        }
+    
+        @keyframes scene5-animation {
+            100%{
+                opacity: 0%;
+                font-size: 150%;
+            }
+        }
+    }
+}
+
+
+
+
+
+// Design for phone
+@include phone {
+    .header {
+    background-size: 100%;
+    height: 35vh;
+
+    #{&}__wave {
+        width: 120%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+     }
+    }
+
+    //scene1-section1
+    .scene1__section {
+
+        .scene1__wrapper{
+            height: 50vh;
+        }
+
+        .scene1__lyrics {
+            font-size: 100%;
+            top: 80%;
+            animation: scene1 25s linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes scene1 {
+            0% {
+                transform: translateX(110%);
+                opacity: 100%;
+            }
+            100% {
+            transform: translateX(-110%);
+            opacity: 100%;
+            }
+        }
+
+        .scene1__waveSvg {
+            left: 25%;
+            top: 47%;
+            animation: wave__scene1__animation 10s ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes wave__scene1__animation {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    }
+
+    .scene2__section {
+        .scene2__wrapper {
+            height: 35vh;
+        }
+
+        .scene2__lyrics {
+            position: absolute;
+            left: -40%;
+            top: 60%;
+            animation: scene2-animation 30s linear;
+            animation-iteration-count: infinite;
+            transform: rotate(-10deg);
+        }
+        
+        @keyframes scene2-animation {
+            0% {
+                font-size: 100%;
+            }
+    
+            50% {
+                font-size: 100%;
+                left: 35%;
+                top: 35%;
+                opacity: 100%;
+            }
+    
+            75% {
+                font-size: 20%;
+                opacity: 75%;
+                left: 40%;
+                top: 35%;
+            }
+    
+            100% {
+                opacity: 0;
+                left: 40%;
+                top: 35%;
+                font-size: 0;
+            }
+            
+        }
+    
+    }
+
+
+
+    .scene3__section{
+        .scene3__wrapper{
+            background-position-x: 30%;
+            height: 50vh;
+        }
+        
+        .scene3__lyrics{
+            left: 10%;
+            font-size: 75%;
+        }
+    
+        @keyframes scene3-animation{
+            0%{
+                opacity: 0%;
+                
+            }
+    
+            25% {
+                opacity: 25%;
+                transform: rotate(-45deg);
+                left: 10%;
+            }
+    
+            50% {
+                opacity: 100%;
+                transform: rotate(0deg);
+                left: 35%;
+                top: 8%;
+            }
+    
+            75% {
+                opacity: 25%;
+                transform: rotate(45deg);
+                left: 60%;
+                top: 27.5%;
+            }
+    
+            100%{
+                opacity: 0%;
+                transform: rotate(90deg);
+                left: 60%;
+                top: 65%;
+                
+            }
+        }
+    }
+
+    .scene4__section{
+        .scene4__wrapper{
+            height: 50vh;
+        }
+        
+        .scene4__lyrics{
+            left: 55%;
+            top: 25%;
+            opacity: 0;
+        }
+    
+        @keyframes scene4-animation1 {
+            0%{
+                opacity: 100%;
+            }
+    
+            50% {
+                opacity: 100%;
+                font-size: 85%;
+            }
+    
+            100%{
+                opacity: 0%;
+            }
+        }
+    }
+
+
+    .scene5__section{
+        .scene5__wrapper{
+            height: 50vh;
+        }
+    
+        .scene5__lyrics{
+            left: 50%;
+            top: 18%;
+        }
+    
+        @keyframes scene5-animation {
+            0%{
+                opacity: 100%;
+                
+            }
+            100%{
+                opacity: 0%;
+                
+                font-size: 125%;
+            }
+        }
+    }
+
+
+}
+    
