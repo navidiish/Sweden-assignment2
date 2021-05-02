@@ -36,8 +36,6 @@ Now we will have a look at the current state of our project.
 
 ## 3. Describing interesting use of cases of Advanced CSS in our project
 
-- Show each scene code and talk about how it was animated. 
-
 - BEM was used for a better organization of our classes 
 
 - SASS (SCSS): used to keep things organized by using variables, nested rules, inline import, partials and so on. 
