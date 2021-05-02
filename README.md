@@ -33,7 +33,7 @@ We also decided to have an option to play the song alongside the animations.
 
  
 
-## 3. Describe interesting use cases of Advanced CSS in your project to the audience
+## 3. Describing interesting use of cases of Advanced CSS in our project
 
 - BEM was used for a better organization of our classes 
 
