@@ -1,4 +1,4 @@
-# Sweden-assignment2
+# Assignment in CCS Advanced - SWEDEN
 This is a repo for our course in CSS Advanced at NTNU Gjøvik.
 
 Our Reflection on seperation of concerns:
