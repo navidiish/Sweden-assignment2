@@ -34,7 +34,7 @@ Now we will have a look at the current state of our project.
 
  
 
-## 3. Describe interesting use cases of Advanced CSS in your project to the audience (Navid) 
+## 3. Describing interesting use of cases of Advanced CSS in our project
 
 - Show each scene code and talk about how it was animated. 
 
@@ -48,7 +48,7 @@ Now we will have a look at the current state of our project.
 
 - We created all of our drawings in Illustrator 
 
-- Font: Pirata One, downloaded from Google. We used this in inspiriation with the wellerman song. To make it more pirate-like 
+- Font: Pirata One, downloaded from Google. We used this in inspiriation with the wellerman song. To make it more pirate-like
 
 - @Keyframes used for the animations 
 
