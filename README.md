@@ -48,7 +48,7 @@ Now we will have a look at the current state of our project.
 
 - We created all of our drawings in Illustrator 
 
-- Font: Pirata One, downloaded from Google. We used this in inspiriation with the wellerman song. To make it more pirate-like
+- Font: Pirata One, downloaded from Google. We used this in inspiriation with the wellerman song. To make it more pirate-like 
 
 - @Keyframes used for the animations 
 
