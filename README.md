@@ -1,7 +1,7 @@
 # Assignment in CCS Advanced - SWEDEN
-This is a repo for our course in CSS Advanced at NTNU Gjøvik.
+This is a repository for our course in CSS Advanced at NTNU Gjøvik.
 
-Our Reflection on seperation of concerns:
+## Our Reflection on seperation of concerns:
 
 -The text we have chosen is an excerpt from the sea shanty Wellerman.
 -We will use BEM to structure and organize our project.
