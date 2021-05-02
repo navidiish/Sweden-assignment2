@@ -3,19 +3,18 @@ This is a repository for our course in CSS Advanced at NTNU Gjøvik.
 
 ## 1. Presentation of our project
 
-Our assignment was to animate a text using css. We had some guidelines as to what we could, but these were loose enough to let us be creative with both our idea and with the execution of said idea. We are currently 3 people in our group Sweden. Navid, Richard and me.  
+Our assignment was to animate a text using css. We had some guidelines as to what we could do, but these were loose enough to let us be creative with both our idea and with the execution of said idea. We are currently 3 people in our group Sweden. Navid, Richard and Ole Ragnar.  
 
-The text we chose to animate was  “Wellerman”, a song about trying to catch a whale for a hefty reward. 
+The text we chose to animate was “Wellerman”, a song about trying to catch a whale for a hefty reward. 
 
-Idea: We chose 4 verses and the chorus of this song to base our project on. Since it is a whaling song, we went for a fisherman/pirate theme. We started out following the story of the song but ended up deviating from it a bit, to make our project more interesting. 
+Idea: We chose 4 verses and the chorus of the song to base our project on. Since it is a whaling song, we went for a fisherman/pirate theme. We started out following the story of the song but ended up deviating from it a bit, to make our project more interesting. 
 
 We also decided to have an option to play the song alongside the animations. 
-
-Now we will have a look at the current state of our project. 
-
  
-
-## 2. Description of the technical stacks
+ 
+ 
+ 
+## 2. Description of the technical stack
 
 - FL studio (to make the music that plays alongside the animations)  
 
@@ -34,19 +33,16 @@ Now we will have a look at the current state of our project.
 
  
 
-## 3. Describing interesting use of cases of Advanced CSS in our project
+## 3. Describe interesting use cases of Advanced CSS in your project to the audience
 
 - BEM was used for a better organization of our classes 
 
 - SASS (SCSS): used to keep things organized by using variables, nested rules, inline import, partials and so on. 
 
-- Header: the wave (svg Ease in and out, to make it seem more “wavey”) 
-
-- Scene1: The boat is moving (Keyframes, svg) 
 
 - We created all of our drawings in Illustrator 
 
-- Font: Pirata One, downloaded from Google. We used this in inspiriation with the wellerman song. To make it more pirate-like
+- Font: Pirata One, downloaded from Google 
 
 - @Keyframes used for the animations 
 
