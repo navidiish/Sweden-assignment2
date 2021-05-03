@@ -240,7 +240,7 @@
 
 
 // Design for phone
-@include phone {
+@include large-phone {
     body h2 {
         font-size: 90%;
     }
@@ -448,7 +448,160 @@
             }
         }
     }
+}
 
+
+//Design for small phone:
+@include small-phone {
+    audio {
+        width: 30%;
+    }
+    .header {
+    height: 25vh;
+
+    #{&}__wave {
+        width: 172%;
+     }
+    }
+
+    
+
+    .scene2__section {
+        .scene2__wrapper {
+            height: 25vh;
+            
+        }
+        
+        @keyframes scene2-animation {
+            0% {
+                font-size: 100%;
+            }
+    
+            50% {
+                font-size: 50%;
+                left: 35%;
+                top: 35%;
+                opacity: 100%;
+            }
+    
+            75% {
+                font-size: 1%;
+                opacity: 75%;
+                left: 40%;
+                top: 35%;
+            }
+    
+            100% {
+                opacity: 0;
+                left: 40%;
+                top: 35%;
+                font-size: 0;
+            }
+        }
+    }
+
+    .scene3__section{
+        .scene3__wrapper{
+            background-position-x: 40%;
+            height: 50vh;
+        }
+        
+        .scene3__lyrics{
+            left: 2%;
+            font-size: 75%;
+        }
+    
+        @keyframes scene3-animation{
+            0%{
+                opacity: 0%;
+                
+            }
+    
+            25% {
+                opacity: 25%;
+                transform: rotate(-45deg);
+                left: 2%;
+            }
+    
+            50% {
+                opacity: 100%;
+                transform: rotate(0deg);
+                left: 30%;
+                top: 8%;
+            }
+    
+            75% {
+                opacity: 25%;
+                transform: rotate(45deg);
+                left: 60%;
+                top: 27.5%;
+            }
+    
+            100%{
+                opacity: 0%;
+                transform: rotate(90deg);
+                left: 60%;
+                top: 65%;
+                
+            }
+        }
+    }
+
+    .scene4__section{
+        .scene4__wrapper{
+            height: 50vh;
+        }
+        
+        .scene4__lyrics{
+            left: 40%;
+            top: 10%;
+            opacity: 0;
+            font-size: 70%;
+        }
+    
+        @keyframes scene4-animation1 {
+            0%{
+                opacity: 100%;
+            }
+    
+            50% {
+                opacity: 100%;
+                font-size: 50%;
+            }
+    
+            100%{
+                opacity: 0%;
+                font-size: 0;
+            }
+        }
+    }
+    .scene5__section{
+        .scene5__wrapper{
+            height: 50vh;
+        }
+    
+        .scene5__lyrics{
+            left: 40%;
+            top: 15%;
+        }
+
+        .scene5__lyrics{
+            transform: rotate(25deg);
+        }
+    
+        @keyframes scene5-animation {
+            0%{
+                opacity: 100%;
+                font-size: 90%;
+                
+            }
+            100%{
+                opacity: 0%;
+                
+                font-size: 105%;
+            }
+        }
+    }
 
 }
 
