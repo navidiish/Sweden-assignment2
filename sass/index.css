@@ -29,7 +29,7 @@ audio {
 }
 
 .header {
-  background-image: url("./assets/images/titleCard.jpg");
+  background-image: url("../assets/images/titlecard.jpg");
   width: 100%;
   height: 100vh;
   position: relative;
@@ -94,7 +94,7 @@ audio {
 }
 
 .scene1__section .scene1__wrapper {
-  background-image: url("./assets/images/scene1.jpg");
+  background-image: url("../assets/images/scene1.jpg");
   background-size: cover;
   position: relative;
   width: 100%;
@@ -189,7 +189,7 @@ audio {
 }
 
 .scene2__section .scene2__wrapper {
-  background-image: url("./assets/images/scene2.jpg");
+  background-image: url("../assets/images/scene2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -268,7 +268,7 @@ audio {
 }
 
 .scene3__section .scene3__wrapper {
-  background-image: url("./assets/images/scene3.jpg");
+  background-image: url("../assets/images/scene3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -370,7 +370,7 @@ audio {
 }
 
 .scene4__section .scene4__wrapper {
-  background-image: url("./assets/images/scene4.jpg");
+  background-image: url("../assets/images/scene4.jpg");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -426,7 +426,7 @@ audio {
 }
 
 .scene5__section .scene5__wrapper {
-  background-image: url("./assets/images/scene5.jpg");
+  background-image: url("../assets/images/scene5.jpg");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
