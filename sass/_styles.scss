@@ -18,7 +18,7 @@ audio {
 }
 
 .header {
-    background-image: url("/assets/images/titleCard.jpg");
+    background-image: url("./assets/images/titleCard.jpg");
     width: $width100;
     height: $height100;
     position: $position-relative;
@@ -73,7 +73,7 @@ audio {
 //Scene1 start
 .scene1__section {
     .scene1__wrapper{
-        background-image: url("/assets/images/scene1.jpg");
+        background-image: url("./assets/images/scene1.jpg");
         background-size: $backgroundCover;
         position: $position-relative;
         width: $width100;
@@ -140,7 +140,7 @@ audio {
 //Scene2 start
 .scene2__section {
     .scene2__wrapper {
-        background-image: url("/assets/images/scene2.jpg");
+        background-image: url("./assets/images/scene2.jpg");
         background-size: $backgroundCover;
         background-repeat: $background-no-repeat;
         overflow: $overflowHidden;
@@ -198,7 +198,7 @@ audio {
 
 .scene3__section{
     .scene3__wrapper{
-        background-image: url("/assets/images/scene3.jpg");
+        background-image: url("./assets/images/scene3.jpg");
         background-size: $backgroundCover;
         background-repeat: $background-no-repeat;
         overflow: $overflowHidden;
@@ -267,7 +267,7 @@ audio {
 .scene4__section{
 
     .scene4__wrapper{
-        background-image: url("/assets/images/scene4.jpg");
+        background-image: url("./assets/images/scene4.jpg");
         position: $position-relative;
         background-size: $backgroundCover;
         background-repeat: $background-no-repeat;
@@ -311,7 +311,7 @@ audio {
 
 .scene5__section{
     .scene5__wrapper{
-        background-image: url("/assets/images/scene5.jpg");
+        background-image: url("./assets/images/scene5.jpg");
         position: $position-relative;
         background-size: $backgroundCover;
         background-repeat: $background-no-repeat;
